@@ -1,6 +1,44 @@
 # GIS-RS-Learning
 记录一些GIS和RS的东西
+# 并行和多线程
+要获取当前CPU的核心数和系统的内存信息，你可以使用Python的psutil库。psutil（process and system utilities）是一个跨平台库，用于访问系统详细信息和资源使用情况，如CPU、内存、磁盘、网络等。
+- 物理核心数（Physical Cores）：
+  - 物理核心指的是CPU中实际存在的处理核心数量。每个物理核心都是一个独立的处理单元，拥有自己的运算和执行资源，如算术逻辑单元（ALU）和寄存器。
+  - 物理核心数是CPU能够同时处理任务或线程的物理限制。一个物理核心在同一时间内通常只能执行一个任务或线程。
+- 逻辑核心数（Logical Cores）：
+  - 逻辑核心数通常与超线程技术有关。超线程是一种使单个物理CPU核心能够像两个逻辑处理单元一样工作的技术，从而提高处理效率和并发能力。
+当超线程被启用时，操作系统和应用程序会将每个物理核心视为两个“逻辑”核心。因此，逻辑核心数可能是物理核心数的两倍（假设每个物理核心支持两个线程）。
+  - 逻辑核心通过在物理核心的不同执行阶段交错执行两个线程，从而尝试利用执行单元的空闲周期，提高CPU的整体效率。
+- 举例说明：
+假设一个CPU有4个物理核心，并且支持超线程技术。那么，这个CPU将有4个物理核心和8个逻辑核心。操作系统和应用程序会看到8个可用的处理单元（核心），尽管实际上只有4个是物理存在的。
+```python
+import psutil
 
+# 获取物理核心数（不考虑超线程）
+physical_cores = psutil.cpu_count(logical=False)
+print(f"Physical CPU cores: {physical_cores}")
+
+# 获取逻辑核心数（考虑超线程）
+logical_cores = psutil.cpu_count(logical=True)
+print(f"Logical CPU cores: {logical_cores}")
+
+# 获取内存信息
+memory_info = psutil.virtual_memory()
+
+# 总内存
+total_memory = memory_info.total / (1024 ** 3)  # 转换为GB
+print(f"Total memory: {total_memory:.2f} GB")
+
+# 可用内存
+available_memory = memory_info.available / (1024 ** 3)  # 转换为GB
+print(f"Available memory: {available_memory:.2f} GB")
+
+
+```
+Physical CPU cores: 128
+Logical CPU cores: 128
+Total memory: 251.60 GB
+Available memory: 215.11 GB
 ## gkpg文件和shapefile文件的差别是什么?
 GeoPackage (GPKG) 文件和 Shapefile 是两种常用的地理空间数据格式，它们在地理信息系统（GIS）中用于存储、交换和管理地理空间数据。这两种格式在结构和功能上有一些关键的差异：
 
