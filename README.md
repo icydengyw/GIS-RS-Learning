@@ -23,7 +23,8 @@
 
 
 ```
-
+- 表情 :smile:
+在GitHub的README.md文件中插入表情符号可以通过使用GitHub支持的表情符号简码（Emoji shortcode）来实现。这些简码以冒号:开始和结束，中间是表情符号的名称。例如，:smile:将显示为一个笑脸表情符号 😄。
 # 并行和多线程
 要获取当前CPU的核心数和系统的内存信息，你可以使用Python的psutil库。psutil（process and system utilities）是一个跨平台库，用于访问系统详细信息和资源使用情况，如CPU、内存、磁盘、网络等。
 - 物理核心数（Physical Cores）：
