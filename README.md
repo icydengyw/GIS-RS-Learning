@@ -1,5 +1,15 @@
 # GIS-RS-Learning
 记录一些GIS和RS的东西
+
+# Markdown 语法
+
+如果代码文件和README.md文件在同一目录下，你只需要文件名。
+
+在README.md文件中，使用Markdown的链接语法创建链接。链接的语法是[链接文本](链接地址)，其中“链接文本”是你希望在README.md中显示的文本，而“链接地址”是代码文件的相对路径。
+
+[示例代码](src/example.py)
+
+
 # 并行和多线程
 要获取当前CPU的核心数和系统的内存信息，你可以使用Python的psutil库。psutil（process and system utilities）是一个跨平台库，用于访问系统详细信息和资源使用情况，如CPU、内存、磁盘、网络等。
 - 物理核心数（Physical Cores）：
