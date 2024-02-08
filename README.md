@@ -18,6 +18,8 @@
 ![替代文本](images/image.png)
 ![替代文本](https://example.com/path/to/image.png)
 ![替代文本](https://raw.githubusercontent.com/username/repository/branch/path/to/image.png)
+# 调整图片尺寸 虽然GitHub的Markdown解析器不支持Markdown语法中的图片尺寸调整，但它允许你在Markdown文件中使用一些HTML标签。
+<img src="image.png" width="100" height="100">
 
 
 ```
