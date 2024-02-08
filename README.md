@@ -9,6 +9,8 @@
 
 [示例代码](src/example.py)
 
+可以直接copy path
+
 
 # 并行和多线程
 要获取当前CPU的核心数和系统的内存信息，你可以使用Python的psutil库。psutil（process and system utilities）是一个跨平台库，用于访问系统详细信息和资源使用情况，如CPU、内存、磁盘、网络等。
