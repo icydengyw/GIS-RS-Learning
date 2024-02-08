@@ -1,7 +1,9 @@
 # GIS-RS-Learning
 记录一些GIS和RS的东西
 
-# Markdown 语法
+## Markdown 语法
+
+- 链接代码
 
 如果代码文件和README.md文件在同一目录下，你只需要文件名。
 
@@ -11,6 +13,14 @@
 
 可以直接copy path
 
+- 插入图片
+```
+![替代文本](images/image.png)
+![替代文本](https://example.com/path/to/image.png)
+![替代文本](https://raw.githubusercontent.com/username/repository/branch/path/to/image.png)
+
+
+```
 
 # 并行和多线程
 要获取当前CPU的核心数和系统的内存信息，你可以使用Python的psutil库。psutil（process and system utilities）是一个跨平台库，用于访问系统详细信息和资源使用情况，如CPU、内存、磁盘、网络等。
