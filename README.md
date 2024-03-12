@@ -1,6 +1,6 @@
 # GIS-RS-Learning
 记录一些GIS和RS的东西
-
+**https://seaborn.pydata.org/tutorial/color_palettes.html**
 ## Markdown 语法
 
 - 链接代码
