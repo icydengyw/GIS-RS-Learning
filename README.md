@@ -1,5 +1,9 @@
 # GIS-RS-Learning
 记录一些GIS和RS的东西
+
+https://www.reddit.com/r/buildapc/comments/llhqj5/the_beginners_guide_to_building_a_pc/
+
+
 **https://seaborn.pydata.org/tutorial/color_palettes.html**
 ## Markdown 语法
 
