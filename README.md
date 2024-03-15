@@ -1,6 +1,11 @@
 # GIS-RS-Learning
 记录一些GIS和RS的东西
 
+## 画图底图
+
+https://www.naturalearthdata.com/
+
+## 电脑装机
 https://www.reddit.com/r/buildapc/comments/llhqj5/the_beginners_guide_to_building_a_pc/
 
 
